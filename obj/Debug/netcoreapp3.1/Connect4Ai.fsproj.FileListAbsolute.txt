@@ -1,0 +1,3 @@
+C:\!Personal\Programming\FSharp\Connect4Ai\obj\Debug\netcoreapp3.1\Connect4Ai.fsprojAssemblyReference.cache
+C:\!Personal\Programming\FSharp\Connect4Ai\obj\Debug\netcoreapp3.1\Connect4Ai.AssemblyInfoInputs.cache
+C:\!Personal\Programming\FSharp\Connect4Ai\obj\Debug\netcoreapp3.1\Connect4Ai.AssemblyInfo.fs
