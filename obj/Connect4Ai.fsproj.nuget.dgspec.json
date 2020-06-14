@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\!Personal\\Programming\\FSharp\\Connect4Ai\\Connect4Ai.fsproj": {}
+    "C:\\!Personal\\Programming\\FSharp\\Connect4Ai\\Connect4Ai.fsproj": {}
   },
   "projects": {
-    "c:\\!Personal\\Programming\\FSharp\\Connect4Ai\\Connect4Ai.fsproj": {
+    "C:\\!Personal\\Programming\\FSharp\\Connect4Ai\\Connect4Ai.fsproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\!Personal\\Programming\\FSharp\\Connect4Ai\\Connect4Ai.fsproj",
+        "projectUniqueName": "C:\\!Personal\\Programming\\FSharp\\Connect4Ai\\Connect4Ai.fsproj",
         "projectName": "Connect4Ai",
-        "projectPath": "c:\\!Personal\\Programming\\FSharp\\Connect4Ai\\Connect4Ai.fsproj",
+        "projectPath": "C:\\!Personal\\Programming\\FSharp\\Connect4Ai\\Connect4Ai.fsproj",
         "packagesPath": "C:\\Users\\rener\\.nuget\\packages\\",
-        "outputPath": "c:\\!Personal\\Programming\\FSharp\\Connect4Ai\\obj\\",
+        "outputPath": "C:\\!Personal\\Programming\\FSharp\\Connect4Ai\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

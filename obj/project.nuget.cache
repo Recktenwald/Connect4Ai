@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zX0pPLUIVz7r958iXp+HBDyj3V/fV2FNmxkBlDGzxxLExiF+32Yt2rV6RxdXi0gXTAhPq4pfRxpvJ1Z9Z+GdGg==",
+  "dgSpecHash": "QlfkakAXqe60nJWhpp/pC9hOBmWoblk/Cx/bVxGkIJOgwNOinGVzUhJs0b7HgrjD2uOY87D6A+1RfmbpNrkzAA==",
   "success": true,
-  "projectFilePath": "c:\\!Personal\\Programming\\FSharp\\Connect4Ai\\Connect4Ai.fsproj",
+  "projectFilePath": "C:\\!Personal\\Programming\\FSharp\\Connect4Ai\\Connect4Ai.fsproj",
   "expectedPackageFiles": [
     "C:\\Users\\rener\\.nuget\\packages\\fsharp.core\\4.7.2\\fsharp.core.4.7.2.nupkg.sha512",
     "C:\\Users\\rener\\.nuget\\packages\\fsharp.systemtextjson\\0.6.2\\fsharp.systemtextjson.0.6.2.nupkg.sha512",

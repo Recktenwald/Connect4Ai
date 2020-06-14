@@ -3,7 +3,7 @@
 open System
 open System.IO
 
-let width, height = 7, 6
+
 
 type Player =
     | PlayerA
@@ -23,8 +23,8 @@ type Board = Cell [] []
 let createBoard (w: int) (h: int) (init) =
     [| for x in [ 1 .. h ] -> [| for y in [ 1 .. w ] -> init x y |] |]
 
-let emptyBoard =
-    createBoard width height (fun x y -> Empty)
+(* let emptyBoard =
+    createBoard width height (fun x y -> Empty) *)
 
 let config c =
     match c with
@@ -91,7 +91,7 @@ let rec playInColFromRow (col: int) (row: int) (board: Board) (player: Player) =
 
 // returns the same board and false if the column is full
 // returns the new board and true if the column still had space
-let tryPlayInCol (n: int) (board: Board) (player: Player) : (Board * bool) =
+let tryPlayInCol (n: int) (board: Board) (player: Player): Board * bool =
     playInColFromRow n (Array.length board - 1) board player
 (*
 let rec getFours (l: 'a list):'a list list =
@@ -182,14 +182,21 @@ let getDiags2 board =
         [| for i in [ max 0 d .. (min (d + nrows) ncols - 1) ] -> board.[i - d].[i] |] |]
 
 
-let winner (board: Board) (player: Player) : bool =
-    if arrayOfArrayWinner board player
-    then true
-    elif arrayOfArrayWinner (getColumns board) player
-    then true
-    elif arrayOfArrayWinner (getDiags1 board) player
-    then true
-    else arrayOfArrayWinner (getDiags2 board) player
+let winner (board: Board) (player: Player): bool =
+    if arrayOfArrayWinner board player then
+        printfn "%A has won in the rows" player
+        true
+    elif arrayOfArrayWinner (getColumns board) player then
+        printfn "%A has won in the columns" player
+        true
+    elif arrayOfArrayWinner (getDiags1 board) player then
+        printfn "%A has won in the first diagonals" player
+        true
+    elif arrayOfArrayWinner (getDiags2 board) player then
+        printfn "%A has won in the second diagonals" player
+        true
+    else
+        false
 // equivalent to checking if listOfArrayWinner (getDiags2 board) player is true,
 // then returning true, and returning false in the else case.
 
