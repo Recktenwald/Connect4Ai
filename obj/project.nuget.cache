@@ -1,12 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "efbewAGxntaF6k0M73aHCya6U6fFiax6fyQh4rdfNbVOoDyS4CDtWW9AJxaA0TrXOJDrr/y9FZHhRdTBKyKFOQ==",
+  "dgSpecHash": "zX0pPLUIVz7r958iXp+HBDyj3V/fV2FNmxkBlDGzxxLExiF+32Yt2rV6RxdXi0gXTAhPq4pfRxpvJ1Z9Z+GdGg==",
   "success": true,
-  "projectFilePath": "C:\\!Personal\\Programming\\FSharp\\Connect4\\Connect4Ai.fsproj",
+  "projectFilePath": "c:\\!Personal\\Programming\\FSharp\\Connect4Ai\\Connect4Ai.fsproj",
   "expectedPackageFiles": [
-    "C:\\Users\\rener\\.nuget\\packages\\fsharp.core\\4.7.1\\fsharp.core.4.7.1.nupkg.sha512",
+    "C:\\Users\\rener\\.nuget\\packages\\fsharp.core\\4.7.2\\fsharp.core.4.7.2.nupkg.sha512",
+    "C:\\Users\\rener\\.nuget\\packages\\fsharp.systemtextjson\\0.6.2\\fsharp.systemtextjson.0.6.2.nupkg.sha512",
+    "C:\\Users\\rener\\.nuget\\packages\\fsharpx.collections\\2.1.1\\fsharpx.collections.2.1.1.nupkg.sha512",
     "C:\\Users\\rener\\.nuget\\packages\\mathnet.numerics\\4.11.0\\mathnet.numerics.4.11.0.nupkg.sha512",
     "C:\\Users\\rener\\.nuget\\packages\\mathnet.numerics.fsharp\\4.11.0\\mathnet.numerics.fsharp.4.11.0.nupkg.sha512",
+    "C:\\Users\\rener\\.nuget\\packages\\synapses\\7.3.1\\synapses.7.3.1.nupkg.sha512",
     "C:\\Users\\rener\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
   ],
   "logs": []

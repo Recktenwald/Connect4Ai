@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "FSharp.Core/4.7.1": {
+      "FSharp.Core/4.7.2": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/FSharp.Core.dll": {}
@@ -52,6 +52,30 @@
           }
         }
       },
+      "FSharp.SystemTextJson/0.6.2": {
+        "type": "package",
+        "dependencies": {
+          "FSharp.Core": "4.7.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.0/FSharp.SystemTextJson.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/FSharp.SystemTextJson.dll": {}
+        }
+      },
+      "FSharpx.Collections/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FSharp.Core": "4.3.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/FSharpx.Collections.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/FSharpx.Collections.dll": {}
+        }
+      },
       "MathNet.Numerics/4.11.0": {
         "type": "package",
         "compile": {
@@ -73,19 +97,40 @@
         "runtime": {
           "lib/netstandard2.0/MathNet.Numerics.FSharp.dll": {}
         }
+      },
+      "Synapses/7.3.1": {
+        "type": "package",
+        "dependencies": {
+          "FSharp.Core": "4.7.0",
+          "FSharp.SystemTextJson": "0.6.2",
+          "FSharpx.Collections": "2.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Synapses.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Synapses.dll": {}
+        },
+        "contentFiles": {
+          "contentFiles/any/netstandard2.0/LICENSE": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
       }
     }
   },
   "libraries": {
-    "FSharp.Core/4.7.1": {
-      "sha512": "cQ4Dn5mFIWnJF8MmL49k2V6L8mtInDrXopskNFbpC4lsPdspTn7WzUQLylB4HU4tpi76ManXMVCAvtlYowTfHQ==",
+    "FSharp.Core/4.7.2": {
+      "sha512": "w3XFVTnyZUbC8e2QT6a85ern6y7eQPPk+MYemz1FP0iBfgZcembL+wmo5cIZ1kxB8jfoXC8Q9KVkOMsGpkBKbA==",
       "type": "package",
-      "path": "fsharp.core/4.7.1",
+      "path": "fsharp.core/4.7.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
-        "fsharp.core.4.7.1.nupkg.sha512",
+        "fsharp.core.4.7.2.nupkg.sha512",
         "fsharp.core.nuspec",
         "lib/net45/FSharp.Core.dll",
         "lib/net45/FSharp.Core.optdata",
@@ -120,7 +165,40 @@
         "lib/netstandard2.0/ru/FSharp.Core.resources.dll",
         "lib/netstandard2.0/tr/FSharp.Core.resources.dll",
         "lib/netstandard2.0/zh-Hans/FSharp.Core.resources.dll",
-        "lib/netstandard2.0/zh-Hant/FSharp.Core.resources.dll"
+        "lib/netstandard2.0/zh-Hant/FSharp.Core.resources.dll",
+        "paket-installmodel.cache"
+      ]
+    },
+    "FSharp.SystemTextJson/0.6.2": {
+      "sha512": "uUV/SIv4vvf03vPKbYGxpOxrcSt/6AyOmq29Nsc1+1/qAAUDfs+i/Rg4/ES2hlhyjuzgqHIOzNIwuxAQJ5/Vxg==",
+      "type": "package",
+      "path": "fsharp.systemtextjson/0.6.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fsharp.systemtextjson.0.6.2.nupkg.sha512",
+        "fsharp.systemtextjson.nuspec",
+        "lib/netcoreapp3.0/FSharp.SystemTextJson.dll",
+        "lib/netcoreapp3.0/FSharp.SystemTextJson.pdb",
+        "lib/netstandard2.0/FSharp.SystemTextJson.dll",
+        "lib/netstandard2.0/FSharp.SystemTextJson.pdb"
+      ]
+    },
+    "FSharpx.Collections/2.1.1": {
+      "sha512": "ssgD9eNPot8Bxwv9ZFgsdbccgYAmI8QQ6iMDTDl2dxfmd6APIHgyXXgnESmhaUyuWljGIX1Ieh+4yFGLoOkS/Q==",
+      "type": "package",
+      "path": "fsharpx.collections/2.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fsharpx.collections.2.1.1.nupkg.sha512",
+        "fsharpx.collections.nuspec",
+        "lib/net45/FSharpx.Collections.dll",
+        "lib/net45/FSharpx.Collections.pdb",
+        "lib/net45/FSharpx.Collections.xml",
+        "lib/netstandard2.0/FSharpx.Collections.dll",
+        "lib/netstandard2.0/FSharpx.Collections.pdb",
+        "lib/netstandard2.0/FSharpx.Collections.xml"
       ]
     },
     "MathNet.Numerics/4.11.0": {
@@ -140,7 +218,8 @@
         "lib/netstandard2.0/MathNet.Numerics.dll",
         "lib/netstandard2.0/MathNet.Numerics.xml",
         "mathnet.numerics.4.11.0.nupkg.sha512",
-        "mathnet.numerics.nuspec"
+        "mathnet.numerics.nuspec",
+        "paket-installmodel.cache"
       ]
     },
     "MathNet.Numerics.FSharp/4.11.0": {
@@ -158,15 +237,32 @@
         "lib/netstandard2.0/MathNet.Numerics.FSharp.dll",
         "lib/netstandard2.0/MathNet.Numerics.FSharp.xml",
         "mathnet.numerics.fsharp.4.11.0.nupkg.sha512",
-        "mathnet.numerics.fsharp.nuspec"
+        "mathnet.numerics.fsharp.nuspec",
+        "paket-installmodel.cache"
+      ]
+    },
+    "Synapses/7.3.1": {
+      "sha512": "ckEr+rfH5NwT4dlhMQ+F/gZ73VRhDAcBHi+ZYcjhPdSFnFEKHHhvjk2LD46/hHr2eSoW2lQ4hcp7zGycsVWpCQ==",
+      "type": "package",
+      "path": "synapses/7.3.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/LICENSE",
+        "contentFiles/any/netstandard2.0/LICENSE",
+        "lib/netstandard2.0/Synapses.dll",
+        "paket-installmodel.cache",
+        "synapses.7.3.1.nupkg.sha512",
+        "synapses.nuspec"
       ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "FSharp.Core >= 4.7.1",
-      "MathNet.Numerics >= *",
-      "MathNet.Numerics.FSharp >= 4.11.0"
+      "FSharp.Core >= 4.7.2",
+      "MathNet.Numerics >= 4.11.0",
+      "MathNet.Numerics.FSharp >= 4.11.0",
+      "Synapses >= 7.3.1"
     ]
   },
   "packageFolders": {
@@ -176,11 +272,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\!Personal\\Programming\\FSharp\\Connect4\\Connect4Ai.fsproj",
+      "projectUniqueName": "c:\\!Personal\\Programming\\FSharp\\Connect4Ai\\Connect4Ai.fsproj",
       "projectName": "Connect4Ai",
-      "projectPath": "C:\\!Personal\\Programming\\FSharp\\Connect4\\Connect4Ai.fsproj",
+      "projectPath": "c:\\!Personal\\Programming\\FSharp\\Connect4Ai\\Connect4Ai.fsproj",
       "packagesPath": "C:\\Users\\rener\\.nuget\\packages\\",
-      "outputPath": "C:\\!Personal\\Programming\\FSharp\\Connect4\\obj\\",
+      "outputPath": "c:\\!Personal\\Programming\\FSharp\\Connect4Ai\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -201,6 +297,14 @@
         "netcoreapp3.1": {
           "projectReferences": {}
         }
+      },
+      "warningProperties": {
+        "noWarn": [
+          "NU1603",
+          "NU1604",
+          "NU1605",
+          "NU1608"
+        ]
       }
     },
     "frameworks": {
@@ -208,17 +312,22 @@
         "dependencies": {
           "FSharp.Core": {
             "target": "Package",
-            "version": "[4.7.1, )",
+            "version": "[4.7.2, )",
             "generatePathProperty": true
           },
           "MathNet.Numerics": {
             "target": "Package",
-            "version": "[*, )",
+            "version": "[4.11.0, )",
             "generatePathProperty": true
           },
           "MathNet.Numerics.FSharp": {
             "target": "Package",
             "version": "[4.11.0, )",
+            "generatePathProperty": true
+          },
+          "Synapses": {
+            "target": "Package",
+            "version": "[7.3.1, )",
             "generatePathProperty": true
           }
         },

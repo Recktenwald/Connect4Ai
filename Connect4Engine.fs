@@ -23,6 +23,9 @@ type Board = Cell [] []
 let createBoard (w: int) (h: int) (init) =
     [| for x in [ 1 .. h ] -> [| for y in [ 1 .. w ] -> init x y |] |]
 
+let emptyBoard =
+    createBoard width height (fun x y -> Empty)
+
 let config c =
     match c with
     | Empty -> " "
@@ -76,6 +79,7 @@ let rec drawBoardToString (board: Cell [] []) =
         + (drawBoardToString board.[1..n - 1])
 
 
+
 let rec playInColFromRow (col: int) (row: int) (board: Board) (player: Player) =
     if row = -1 then
         (board, false)
@@ -85,7 +89,9 @@ let rec playInColFromRow (col: int) (row: int) (board: Board) (player: Player) =
     else
         playInColFromRow col (row - 1) board player
 
-let playInCol (n: int) (board: Board) (player: Player) =
+// returns the same board and false if the column is full
+// returns the new board and true if the column still had space
+let tryPlayInCol (n: int) (board: Board) (player: Player) : (Board * bool) =
     playInColFromRow n (Array.length board - 1) board player
 (*
 let rec getFours (l: 'a list):'a list list =
@@ -140,7 +146,7 @@ let arrayWinner (row: Cell []) (player: Player) =
 
 
 // Takes a list of arrays and checks if p has one
-let arrayOfArrayWinner (board: Cell [] []) (player: Player) =
+let arrayOfArrayWinner (board: Cell [] []) (player: Player): bool =
     Array.exists (fun arr -> arrayWinner arr player) board
 
 // This is basically just a transpose function, which I had to write again
@@ -176,7 +182,7 @@ let getDiags2 board =
         [| for i in [ max 0 d .. (min (d + nrows) ncols - 1) ] -> board.[i - d].[i] |] |]
 
 
-let winner (board: Board) (player: Player) =
+let winner (board: Board) (player: Player) : bool =
     if arrayOfArrayWinner board player
     then true
     elif arrayOfArrayWinner (getColumns board) player
@@ -186,3 +192,12 @@ let winner (board: Board) (player: Player) =
     else arrayOfArrayWinner (getDiags2 board) player
 // equivalent to checking if listOfArrayWinner (getDiags2 board) player is true,
 // then returning true, and returning false in the else case.
+
+let draw (board: Board) =
+    let hasAWon = winner board PlayerA
+    let hasBWon = winner board PlayerB
+
+    let boardFull =
+        Array.forall (fun x -> x = Empty) (Array.concat board)
+
+    (not hasAWon) && (not hasBWon) && boardFull

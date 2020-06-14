@@ -1,0 +1,175 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Connect4Ai/1.0.0": {
+        "dependencies": {
+          "FSharp.Core": "4.7.2",
+          "MathNet.Numerics": "4.11.0",
+          "MathNet.Numerics.FSharp": "4.11.0",
+          "Synapses": "7.3.1"
+        },
+        "runtime": {
+          "Connect4Ai.dll": {}
+        }
+      },
+      "FSharp.Core/4.7.2": {
+        "runtime": {
+          "lib/netstandard2.0/FSharp.Core.dll": {
+            "assemblyVersion": "4.7.0.0",
+            "fileVersion": "4.700.20.27008"
+          }
+        },
+        "resources": {
+          "lib/netstandard2.0/cs/FSharp.Core.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/netstandard2.0/de/FSharp.Core.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netstandard2.0/es/FSharp.Core.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netstandard2.0/fr/FSharp.Core.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netstandard2.0/it/FSharp.Core.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netstandard2.0/ja/FSharp.Core.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netstandard2.0/ko/FSharp.Core.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netstandard2.0/pl/FSharp.Core.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/netstandard2.0/pt-BR/FSharp.Core.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netstandard2.0/ru/FSharp.Core.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netstandard2.0/tr/FSharp.Core.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/netstandard2.0/zh-Hans/FSharp.Core.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netstandard2.0/zh-Hant/FSharp.Core.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "FSharp.SystemTextJson/0.6.2": {
+        "dependencies": {
+          "FSharp.Core": "4.7.2"
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/FSharp.SystemTextJson.dll": {
+            "assemblyVersion": "0.6.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "FSharpx.Collections/2.1.1": {
+        "dependencies": {
+          "FSharp.Core": "4.7.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/FSharpx.Collections.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "MathNet.Numerics/4.11.0": {
+        "runtime": {
+          "lib/netstandard2.0/MathNet.Numerics.dll": {
+            "assemblyVersion": "4.11.0.0",
+            "fileVersion": "4.11.0.0"
+          }
+        }
+      },
+      "MathNet.Numerics.FSharp/4.11.0": {
+        "dependencies": {
+          "FSharp.Core": "4.7.2",
+          "MathNet.Numerics": "4.11.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/MathNet.Numerics.FSharp.dll": {
+            "assemblyVersion": "4.11.0.0",
+            "fileVersion": "4.11.0.0"
+          }
+        }
+      },
+      "Synapses/7.3.1": {
+        "dependencies": {
+          "FSharp.Core": "4.7.2",
+          "FSharp.SystemTextJson": "0.6.2",
+          "FSharpx.Collections": "2.1.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Synapses.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Connect4Ai/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FSharp.Core/4.7.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-w3XFVTnyZUbC8e2QT6a85ern6y7eQPPk+MYemz1FP0iBfgZcembL+wmo5cIZ1kxB8jfoXC8Q9KVkOMsGpkBKbA==",
+      "path": "fsharp.core/4.7.2",
+      "hashPath": "fsharp.core.4.7.2.nupkg.sha512"
+    },
+    "FSharp.SystemTextJson/0.6.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uUV/SIv4vvf03vPKbYGxpOxrcSt/6AyOmq29Nsc1+1/qAAUDfs+i/Rg4/ES2hlhyjuzgqHIOzNIwuxAQJ5/Vxg==",
+      "path": "fsharp.systemtextjson/0.6.2",
+      "hashPath": "fsharp.systemtextjson.0.6.2.nupkg.sha512"
+    },
+    "FSharpx.Collections/2.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ssgD9eNPot8Bxwv9ZFgsdbccgYAmI8QQ6iMDTDl2dxfmd6APIHgyXXgnESmhaUyuWljGIX1Ieh+4yFGLoOkS/Q==",
+      "path": "fsharpx.collections/2.1.1",
+      "hashPath": "fsharpx.collections.2.1.1.nupkg.sha512"
+    },
+    "MathNet.Numerics/4.11.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nmr86AZMGgLprxygcew8Q2BOlPbSYGIkponJMRBoO+CVohkE/CqYJ2KKMThVJUJ0obJxoYI7agCRe61XDVgZuw==",
+      "path": "mathnet.numerics/4.11.0",
+      "hashPath": "mathnet.numerics.4.11.0.nupkg.sha512"
+    },
+    "MathNet.Numerics.FSharp/4.11.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-g890Jp09zvc0R4bZZMen+D16qeDUKq0awDk7KEcko1j1dwPVhhtzfFuKclvHpw0scCXmVAgeo3NRv90753NM0Q==",
+      "path": "mathnet.numerics.fsharp/4.11.0",
+      "hashPath": "mathnet.numerics.fsharp.4.11.0.nupkg.sha512"
+    },
+    "Synapses/7.3.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ckEr+rfH5NwT4dlhMQ+F/gZ73VRhDAcBHi+ZYcjhPdSFnFEKHHhvjk2LD46/hHr2eSoW2lQ4hcp7zGycsVWpCQ==",
+      "path": "synapses/7.3.1",
+      "hashPath": "synapses.7.3.1.nupkg.sha512"
+    }
+  }
+}

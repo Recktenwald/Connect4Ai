@@ -12,9 +12,19 @@
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)synapses\7.3.1\contentFiles\any\netstandard2.0\LICENSE" Condition="Exists('$(NuGetPackageRoot)synapses\7.3.1\contentFiles\any\netstandard2.0\LICENSE')">
+      <NuGetPackageId>Synapses</NuGetPackageId>
+      <NuGetPackageVersion>7.3.1</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Private>False</Private>
+      <Link>LICENSE</Link>
+    </Content>
+  </ItemGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">C:\Users\rener\.nuget\packages\fsharp.core\4.7.2</PkgFSharp_Core>
+    <PkgSynapses Condition=" '$(PkgSynapses)' == '' ">C:\Users\rener\.nuget\packages\synapses\7.3.1</PkgSynapses>
     <PkgMathNet_Numerics Condition=" '$(PkgMathNet_Numerics)' == '' ">C:\Users\rener\.nuget\packages\mathnet.numerics\4.11.0</PkgMathNet_Numerics>
-    <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">C:\Users\rener\.nuget\packages\fsharp.core\4.7.1</PkgFSharp_Core>
     <PkgMathNet_Numerics_FSharp Condition=" '$(PkgMathNet_Numerics_FSharp)' == '' ">C:\Users\rener\.nuget\packages\mathnet.numerics.fsharp\4.11.0</PkgMathNet_Numerics_FSharp>
   </PropertyGroup>
 </Project>

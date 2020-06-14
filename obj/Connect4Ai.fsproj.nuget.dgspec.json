@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\!Personal\\Programming\\FSharp\\Connect4\\Connect4Ai.fsproj": {}
+    "c:\\!Personal\\Programming\\FSharp\\Connect4Ai\\Connect4Ai.fsproj": {}
   },
   "projects": {
-    "C:\\!Personal\\Programming\\FSharp\\Connect4\\Connect4Ai.fsproj": {
+    "c:\\!Personal\\Programming\\FSharp\\Connect4Ai\\Connect4Ai.fsproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\!Personal\\Programming\\FSharp\\Connect4\\Connect4Ai.fsproj",
+        "projectUniqueName": "c:\\!Personal\\Programming\\FSharp\\Connect4Ai\\Connect4Ai.fsproj",
         "projectName": "Connect4Ai",
-        "projectPath": "C:\\!Personal\\Programming\\FSharp\\Connect4\\Connect4Ai.fsproj",
+        "projectPath": "c:\\!Personal\\Programming\\FSharp\\Connect4Ai\\Connect4Ai.fsproj",
         "packagesPath": "C:\\Users\\rener\\.nuget\\packages\\",
-        "outputPath": "C:\\!Personal\\Programming\\FSharp\\Connect4\\obj\\",
+        "outputPath": "c:\\!Personal\\Programming\\FSharp\\Connect4Ai\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -32,6 +32,14 @@
           "netcoreapp3.1": {
             "projectReferences": {}
           }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1604",
+            "NU1605",
+            "NU1608"
+          ]
         }
       },
       "frameworks": {
@@ -39,17 +47,22 @@
           "dependencies": {
             "FSharp.Core": {
               "target": "Package",
-              "version": "[4.7.1, )",
+              "version": "[4.7.2, )",
               "generatePathProperty": true
             },
             "MathNet.Numerics": {
               "target": "Package",
-              "version": "[*, )",
+              "version": "[4.11.0, )",
               "generatePathProperty": true
             },
             "MathNet.Numerics.FSharp": {
               "target": "Package",
               "version": "[4.11.0, )",
+              "generatePathProperty": true
+            },
+            "Synapses": {
+              "target": "Package",
+              "version": "[7.3.1, )",
               "generatePathProperty": true
             }
           },

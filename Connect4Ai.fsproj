@@ -5,10 +5,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Connect4Engine.fs" />
-    <Compile Include="DeepLearningEngine.fs" />
+    <Compile Include="QLearning.fs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MathNet.Numerics" Version="4.11.0" />
-    <PackageReference Include="MathNet.Numerics.FSharp" Version="4.11.0" />
+    <PackageReference Include="Synapses" Version="7.3.1" />
   </ItemGroup>
+  <Import Project=".paket\Paket.Restore.targets" />
 </Project>
