@@ -9,6 +9,7 @@
       "Connect4Ai/1.0.0": {
         "dependencies": {
           "FSharp.Core": "4.7.2",
+          "FSharp.Json": "0.4.0",
           "MathNet.Numerics": "4.11.0",
           "MathNet.Numerics.FSharp": "4.11.0",
           "Synapses": "7.3.1"
@@ -63,6 +64,17 @@
           },
           "lib/netstandard2.0/zh-Hant/FSharp.Core.resources.dll": {
             "locale": "zh-Hant"
+          }
+        }
+      },
+      "FSharp.Json/0.4.0": {
+        "dependencies": {
+          "FSharp.Core": "4.7.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/FSharp.Json.dll": {
+            "assemblyVersion": "0.4.0.0",
+            "fileVersion": "0.0.0.0"
           }
         }
       },
@@ -135,6 +147,13 @@
       "sha512": "sha512-w3XFVTnyZUbC8e2QT6a85ern6y7eQPPk+MYemz1FP0iBfgZcembL+wmo5cIZ1kxB8jfoXC8Q9KVkOMsGpkBKbA==",
       "path": "fsharp.core/4.7.2",
       "hashPath": "fsharp.core.4.7.2.nupkg.sha512"
+    },
+    "FSharp.Json/0.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3QchEhViQdnvJQzVG7M/CIgdCZhDJw4ZzFKMfLqb/j1cucxcUcXvIMxf6rV0ktFn9mmkmw9WOOuIsrG012vkUg==",
+      "path": "fsharp.json/0.4.0",
+      "hashPath": "fsharp.json.0.4.0.nupkg.sha512"
     },
     "FSharp.SystemTextJson/0.6.2": {
       "type": "package",

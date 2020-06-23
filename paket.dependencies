@@ -6,3 +6,4 @@ nuget FSharp.Core
 nuget MathNet.Numerics 4.11.0
 nuget MathNet.Numerics.FSharp 4.11.0
 nuget Synapses 7.3.1
+nuget FSharp.Json 0.4.0

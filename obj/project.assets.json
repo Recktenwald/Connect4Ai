@@ -52,6 +52,18 @@
           }
         }
       },
+      "FSharp.Json/0.4.0": {
+        "type": "package",
+        "dependencies": {
+          "FSharp.Core": "4.6.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/FSharp.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/FSharp.Json.dll": {}
+        }
+      },
       "FSharp.SystemTextJson/0.6.2": {
         "type": "package",
         "dependencies": {
@@ -169,6 +181,19 @@
         "paket-installmodel.cache"
       ]
     },
+    "FSharp.Json/0.4.0": {
+      "sha512": "3QchEhViQdnvJQzVG7M/CIgdCZhDJw4ZzFKMfLqb/j1cucxcUcXvIMxf6rV0ktFn9mmkmw9WOOuIsrG012vkUg==",
+      "type": "package",
+      "path": "fsharp.json/0.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fsharp.json.0.4.0.nupkg.sha512",
+        "fsharp.json.nuspec",
+        "lib/netstandard2.0/FSharp.Json.dll",
+        "paket-installmodel.cache"
+      ]
+    },
     "FSharp.SystemTextJson/0.6.2": {
       "sha512": "uUV/SIv4vvf03vPKbYGxpOxrcSt/6AyOmq29Nsc1+1/qAAUDfs+i/Rg4/ES2hlhyjuzgqHIOzNIwuxAQJ5/Vxg==",
       "type": "package",
@@ -260,37 +285,31 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "FSharp.Core >= 4.7.2",
+      "FSharp.Json >= 0.4.0",
       "MathNet.Numerics >= 4.11.0",
       "MathNet.Numerics.FSharp >= 4.11.0",
       "Synapses >= 7.3.1"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\rener\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\rener\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\!Personal\\Programming\\FSharp\\Connect4Ai\\Connect4Ai.fsproj",
+      "projectUniqueName": "C:\\!Personal\\Programming\\FSharp\\Connect4Ai\\Connect4Ai.fsproj",
       "projectName": "Connect4Ai",
-      "projectPath": "c:\\!Personal\\Programming\\FSharp\\Connect4Ai\\Connect4Ai.fsproj",
+      "projectPath": "C:\\!Personal\\Programming\\FSharp\\Connect4Ai\\Connect4Ai.fsproj",
       "packagesPath": "C:\\Users\\rener\\.nuget\\packages\\",
-      "outputPath": "c:\\!Personal\\Programming\\FSharp\\Connect4Ai\\obj\\",
+      "outputPath": "C:\\!Personal\\Programming\\FSharp\\Connect4Ai\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\rener\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\rener\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -313,6 +332,11 @@
           "FSharp.Core": {
             "target": "Package",
             "version": "[4.7.2, )",
+            "generatePathProperty": true
+          },
+          "FSharp.Json": {
+            "target": "Package",
+            "version": "[0.4.0, )",
             "generatePathProperty": true
           },
           "MathNet.Numerics": {
@@ -341,18 +365,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[3.1.2, 3.1.2]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

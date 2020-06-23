@@ -30,3 +30,4 @@ C:\!Personal\Programming\FSharp\Connect4Ai\obj\Debug\netcoreapp3.1\Connect4Ai.ge
 C:\!Personal\Programming\FSharp\Connect4Ai\bin\Debug\netcoreapp3.1\FSharp.SystemTextJson.dll
 C:\!Personal\Programming\FSharp\Connect4Ai\bin\Debug\netcoreapp3.1\FSharpx.Collections.dll
 C:\!Personal\Programming\FSharp\Connect4Ai\bin\Debug\netcoreapp3.1\Synapses.dll
+C:\!Personal\Programming\FSharp\Connect4Ai\bin\Debug\netcoreapp3.1\FSharp.Json.dll

@@ -23,6 +23,9 @@ type Board = Cell [] []
 let createBoard (w: int) (h: int) (init) =
     [| for x in [ 1 .. h ] -> [| for y in [ 1 .. w ] -> init x y |] |]
 
+let numOfCols board = Array.length (Array.head board)
+
+let numOfRows board = Array.length board
 (* let emptyBoard =
     createBoard width height (fun x y -> Empty) *)
 
@@ -81,6 +84,7 @@ let rec drawBoardToString (board: Cell [] []) =
 
 
 let rec playInColFromRow (col: int) (row: int) (board: Board) (player: Player) =
+    //printfn "Trying to play in row %A and col %A" row col
     if row = -1 then
         (board, false)
     else if board.[row].[col] = Empty then
@@ -184,16 +188,16 @@ let getDiags2 board =
 
 let winner (board: Board) (player: Player): bool =
     if arrayOfArrayWinner board player then
-        printfn "%A has won in the rows" player
+        //printfn "%A has won in the rows" player
         true
     elif arrayOfArrayWinner (getColumns board) player then
-        printfn "%A has won in the columns" player
+        //printfn "%A has won in the columns" player
         true
     elif arrayOfArrayWinner (getDiags1 board) player then
-        printfn "%A has won in the first diagonals" player
+        //printfn "%A has won in the first diagonals" player
         true
     elif arrayOfArrayWinner (getDiags2 board) player then
-        printfn "%A has won in the second diagonals" player
+        //printfn "%A has won in the second diagonals" player
         true
     else
         false

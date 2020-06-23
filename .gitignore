@@ -1,6 +1,6 @@
 #Paket dependency manager
 .paket/
 paket-files/
-
+trainedNets
 .fake
 .ionide

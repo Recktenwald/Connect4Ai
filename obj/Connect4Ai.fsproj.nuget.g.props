@@ -5,7 +5,7 @@
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\rener\.nuget\packages\;C:\Microsoft\Xamarin\NuGet\</NuGetPackageFolders>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\rener\.nuget\packages\</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
     <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.6.0</NuGetToolVersion>
   </PropertyGroup>
@@ -26,5 +26,6 @@
     <PkgSynapses Condition=" '$(PkgSynapses)' == '' ">C:\Users\rener\.nuget\packages\synapses\7.3.1</PkgSynapses>
     <PkgMathNet_Numerics Condition=" '$(PkgMathNet_Numerics)' == '' ">C:\Users\rener\.nuget\packages\mathnet.numerics\4.11.0</PkgMathNet_Numerics>
     <PkgMathNet_Numerics_FSharp Condition=" '$(PkgMathNet_Numerics_FSharp)' == '' ">C:\Users\rener\.nuget\packages\mathnet.numerics.fsharp\4.11.0</PkgMathNet_Numerics_FSharp>
+    <PkgFSharp_Json Condition=" '$(PkgFSharp_Json)' == '' ">C:\Users\rener\.nuget\packages\fsharp.json\0.4.0</PkgFSharp_Json>
   </PropertyGroup>
 </Project>
