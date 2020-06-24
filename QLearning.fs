@@ -359,19 +359,19 @@ let main argv =
     let startnet = NeuralNetwork.init layers
 
     let json =
-        File.ReadAllText(@"trainedNets/net2020-06-23-16-27-46.json")
+        File.ReadAllText(@"trainedNets/net2020-06-23-16-46-03.json")
 
     let loadedNetwork = NeuralNetwork.ofJson (json)
     let rnd = Random()
 
     let net0 =
-        playNGamesAndTrain loadedNetwork 0.1 100 0.2 0.02 rnd
+        playNGamesAndTrain loadedNetwork 0.1 1000 0.2 0.02 rnd
 
     let net1 =
-        playMRoundsOfNGamesAndTrain net0 100 100 0.2 0.01 rnd
+        playMRoundsOfNGamesAndTrain net0 200 200 0.2 0.01 rnd
 
     let net2 =
-        playMRoundsOfNGamesAndTrain net1 100 100 0.2 0.001 rnd
+        playMRoundsOfNGamesAndTrain net1 200 200 0.2 0.001 rnd
     //This is for play against humans
 
     let emptyBoard =
